@@ -1,0 +1,10 @@
+services:
+  todo-service:
+    build: .
+    ports:
+      - "5001:5001"
+
+  sonarqube:
+    image: sonarqube:community
+    ports:
+      - "9000:9000"
